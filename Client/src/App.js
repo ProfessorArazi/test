@@ -2,8 +2,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Provider } from "./contextApi";
 import { Home } from "./Components/Home";
-import { useState } from "react";
-// import { useEffect } from "react";
+// import { useEffect , useState } from "react";
 
 function App() {
   // useEffect(() => {
@@ -12,11 +11,11 @@ function App() {
   //   );
   // }, []);
 
-  const [openMenu, setOpenMenu] = useState(false);
+  // const [openMenu, setOpenMenu] = useState(false);
 
   return (
     <div className="App">
-      <nav
+      {/* <nav
         style={{
           display: "flex",
           justifyContent: "space-between",
@@ -37,7 +36,7 @@ function App() {
           <p>2</p>
           <p>3</p>
         </div>
-      )}
+      )} */}
       <Provider value={{ home: <p>Home</p> }}>
         <BrowserRouter>
           <Routes>
