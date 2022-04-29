@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="page-title">
+        <img
+          src="https://svcollege.co.il/wp-content/uploads/2020/08/h7680117_logo_160x160.png"
+          alt="logo"
+        />
+        <h2>SvBurger Signup Page</h2>
+      </div>
+      <form id="signupForm" onsubmit="signup(event)">
+        <input type="text" name="firstname" placeholder="First name" />
+        <input type="text" name="lastname" placeholder="Last name" />
+        <input type="email" name="email" placeholder="Email address" />
+        <input type="password" name="password" placeholder="Create password" />
+        <input type="password" name="confirm" placeholder="Confirm password" />
+        <button class="small-btn">Next</button>
+      </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

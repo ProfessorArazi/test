@@ -1,0 +1,143 @@
+body {
+  text-align: center;
+  background: rgb(175, 139, 139);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu-item {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  background: rgb(47, 47, 116);
+  width: 25%;
+  margin: 10px auto;
+  cursor: pointer;
+  padding-right: 10px;
+}
+
+h1,
+h2 {
+  margin-bottom: 4rem;
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+img {
+  width: 100px;
+  display: inline;
+}
+
+input {
+  display: block;
+  margin: 10px auto;
+  border: #fff;
+}
+
+input::placeholder {
+  padding-left: 10px;
+}
+
+.main {
+  justify-content: center;
+  border: 2px black solid;
+  width: 45%;
+  margin: 10px auto;
+  padding-bottom: 1rem;
+}
+
+#home-page button {
+  height: 3rem;
+  width: 70%;
+  margin: 20px auto;
+  border-radius: 10px;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#home-page button:hover {
+  background-color: goldenrod;
+}
+
+.page-title {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.page-title img {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#buttom-images {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5rem;
+}
+
+#signinPage input,
+#signinPage button {
+  border-radius: 7px !important;
+  border: 2px rgb(114, 147, 218) solid;
+}
+
+#signinPage input {
+  width: 70%;
+  height: 2rem;
+}
+
+#signinPage button {
+  width: 71%;
+  height: 4rem;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#signinPage button:hover {
+  background: goldenrod;
+}
+
+#signupForm {
+  position: relative;
+}
+
+#signupForm input {
+  margin: 10px 0 0 20px;
+  width: 50%;
+  height: 2rem;
+  border-radius: 7px;
+}
+
+#signupForm button {
+  margin-right: 42%;
+  margin-top: 5rem;
+}
+
+.small-btn {
+  width: 6rem;
+  height: 2.5rem;
+  border-radius: 20px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border: #007bff;
+}
+
+.small-btn:hover {
+  background-color: #146ac5;
+  border: #146ac5;
+}
+
+#menu-title {
+  margin-bottom: 10px;
+}
