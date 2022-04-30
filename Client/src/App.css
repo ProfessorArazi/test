@@ -7,6 +7,43 @@
   pointer-events: none;
 }
 
+/* .App nav {
+  background: rgb(69, 113, 163);
+  border: 1px solid rgb(62, 138, 225);
+  display: flex;
+  justify-content: space-between;
+  direction: rtl;
+  padding: 0 10px;
+}
+
+.menu-btn {
+  background: rgb(69, 113, 163);
+  border: rgb(69, 113, 163);
+  font-size: 20px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.menu {
+  text-align: center;
+  position: absolute;
+  right: 0;
+  width: 200px;
+  font-size: 1.5em;
+  font-weight: bold;
+  background: rgb(69, 113, 163);
+}
+
+.menu div {
+  border: 1px solid rgb(69, 131, 202);
+  cursor: pointer;
+  padding: 20px;
+}
+
+.active {
+  background: rgb(140, 220, 238);
+} */
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

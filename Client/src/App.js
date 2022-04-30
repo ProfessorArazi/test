@@ -2,39 +2,24 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Provider } from "./contextApi";
 import { Home } from "./Components/Home";
-// import { useEffect , useState } from "react";
+// import { useState } from "react";
 
 function App() {
-  // useEffect(() => {
-  //   fetch(`${process.env.REACT_APP_SERVER}/check`).then((res) =>
-  //     res.json().then((data) => console.log(data))
-  //   );
-  // }, []);
-
   // const [openMenu, setOpenMenu] = useState(false);
 
   return (
     <div className="App">
-      {/* <nav
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          margin: "10px 20px",
-        }}
-      >
-        <a href="#">something</a>
-        <a href="#">something</a>
-        <a href="#">something</a>
-        <button onClick={() => setOpenMenu(!openMenu)}>Menu</button>
+      {/* <nav>
+        <button className="menu-btn" onClick={() => setOpenMenu(!openMenu)}>
+          תפריט
+        </button>
+        <h2>{`text`}</h2>
       </nav>
       {openMenu && (
-        <div
-          style={{ textAlign: "right", marginRight: "20px" }}
-          onClick={() => setOpenMenu(false)}
-        >
-          <p>1</p>
-          <p>2</p>
-          <p>3</p>
+        <div className="menu" onClick={() => setOpenMenu(false)}>
+          <div className={`${true && "active"}`}>A 101</div>
+          <div className={`${true && "active"}`}>B 100</div>
+          <div className={`${true && "active"}`}>C 102</div>
         </div>
       )} */}
       <Provider value={{ home: <p>Home</p> }}>
