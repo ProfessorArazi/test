@@ -2,13 +2,18 @@ const express = require("express");
 const db = require("mongoose");
 const app = express();
 const port = 8080;
+
+// חיבור למאגר מידע
+
 db.connect("mongodb://127.0.0.1:27017/newdb", () => {
   console.log("db on");
 });
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(express.static("client"));
+app.use(express.static("client")); //  html,css,js מציג את תיקיית קליינט שמחזיקה בתוכה כמה קבצי
+
+// דוגמה לסכמות
 
 const customer = db.Schema({
   firstname: String,
@@ -26,8 +31,12 @@ const order = db.Schema({
   price: Number,
 });
 
+// דוגמה ליצירת מודלים
+
 const customers = db.model("customer", customer);
 const orders = db.model("order", order);
+
+// דוגמה לבקשות פוסט
 
 app.post("/signup", async (req, res) => {
   const { firstname, lastname, email, password } = req.body;
@@ -71,5 +80,7 @@ app.post("/order", async (req, res) => {
     res.send({ message: "משהו השתבש" });
   }
 });
+
+// מפעיל את השרת
 
 app.listen(port, console.log(`listening on port ${port}`));

@@ -1,3 +1,5 @@
+// קובץ שמחזיק את כל הקלאסים ודוגמה לקלאס
+
 export class Player {
   constructor(fn) {
     this.fn = fn;
@@ -32,26 +34,6 @@ export class Player {
   again() {
     this.points = 0;
 
-    this.getCards();
-  }
-}
-
-export class Computer {
-  constructor() {
-    this.cards = [];
-    this.points = 0;
-  }
-  getCards() {
-    this.cards = [];
-  }
-  addPoint() {
-    this.points++;
-  }
-  removeCard() {
-    this.cards.shift();
-  }
-  again() {
-    this.points = 0;
     this.getCards();
   }
 }
